@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="CampusKey lists verified student offers you can claim in India with your college ID card or college email: developer tools, AI, design software, entertainment, travel and more.">
+  <meta name="theme-color" content="#1f3a5f">
+  <title>CampusKey | Student offers in India with your college ID and email</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to offers</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="CampusKey home">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>CampusKey</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#offers">Offers</a>
+        <a href="#prepare">Get ready</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">For college students in India</p>
+      <h1>Your college ID and email unlock more than you think.</h1>
+      <p class="lead">Free software, cloud credits, AI tools, cheaper music, travel concessions and more. Every offer lists who qualifies, what proof you need and the exact steps to claim it, with links to official sources.</p>
+      <div class="stats" id="stats" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="offers" class="container" aria-labelledby="offers-title">
+      <h2 id="offers-title" class="section-title">Browse offers</h2>
+
+      <div class="controls" role="search">
+        <label class="search">
+          <span class="visually-hidden">Search offers</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M10 4a6 6 0 1 0 3.7 10.7l4.3 4.3 1.4-1.4-4.3-4.3A6 6 0 0 0 10 4Zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/></svg>
+          <input id="search" type="search" placeholder="Search e.g. GitHub, Spotify, railway" autocomplete="off">
+        </label>
+
+        <div class="filter-row">
+          <label class="select">
+            <span>What do you have?</span>
+            <select id="proof">
+              <option value="all">Show everything</option>
+              <option value="email">College email</option>
+              <option value="id">College ID card</option>
+            </select>
+          </label>
+          <label class="select">
+            <span>Sort by</span>
+            <select id="sort">
+              <option value="featured">Most useful first</option>
+              <option value="name">Name A to Z</option>
+              <option value="free">Free first</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      </div>
+
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p>No offers match your filters.</p>
+        <button type="button" class="btn" id="reset">Clear filters</button>
+      </div>
+    </section>
+
+    <section id="prepare" class="container prepare" aria-labelledby="prepare-title">
+      <h2 id="prepare-title" class="section-title">Get ready before you apply</h2>
+      <div class="prepare-grid">
+        <article class="tip">
+          <h3>1. Activate your college email</h3>
+          <p>Addresses ending in .ac.in, .edu.in or your college domain get approved fastest. Ask your IT cell or admin office if you do not have one yet.</p>
+        </article>
+        <article class="tip">
+          <h3>2. Scan your ID card clearly</h3>
+          <p>Take a sharp photo of the front of your ID showing your name, college name and a validity date. Many forms reject blurry or cropped images.</p>
+        </article>
+        <article class="tip">
+          <h3>3. Keep a bonafide certificate</h3>
+          <p>If your ID has no expiry date, a dated bonafide or fee receipt from this academic year works as proof for most programs.</p>
+        </article>
+        <article class="tip">
+          <h3>4. Match your name everywhere</h3>
+          <p>Use the same name on your account profile as on your ID. Mismatches are the most common reason for rejection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="container faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section-title">Common questions</h2>
+      <details>
+        <summary>Is CampusKey affiliated with these companies?</summary>
+        <p>No. CampusKey is an independent guide. We link to official pages and you always claim offers directly from the provider.</p>
+      </details>
+      <details>
+        <summary>How accurate is this information?</summary>
+        <p>Each offer was checked against official sources on the date shown. Companies change terms often, so always confirm the final price and eligibility on the official page before paying or submitting documents.</p>
+      </details>
+      <details>
+        <summary>I do not have a college email. Can I still claim offers?</summary>
+        <p>Yes. Choose "College ID card" in the filter. Programs like the GitHub Student Developer Pack, JetBrains and many others accept an ID card or enrollment document instead.</p>
+      </details>
+      <details>
+        <summary>Why are Netflix, JioHotstar and news sites missing?</summary>
+        <p>We checked them and found no student plan in India for Netflix, JioHotstar, JioSaavn, Gaana or Times Prime. We could not confirm student plans from The Hindu, Economic Times or Indian Express either, so we left them out. Your college library may already give you free access to newspapers and journals.</p>
+      </details>
+      <details>
+        <summary>What does the confidence label mean?</summary>
+        <p>High means the offer is confirmed for India on the official page. Medium means it is available but some details such as India pricing could not be fully confirmed. Low means it may change or availability in India is uncertain.</p>
+      </details>
+      <details>
+        <summary>Is it safe to upload my ID card?</summary>
+        <p>Only upload documents on the provider's official site or its named verification partner such as SheerID or UNiDAYS. Never send your ID over chat apps or to unofficial pages.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>CampusKey is an independent, non-commercial guide. Offer details were last checked on <span id="checked-date"></span>. Terms can change at any time, so verify on the official page before you claim.</p>
+    </div>
+  </footer>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <div>
+          <p class="dialog-provider" id="detail-provider"></p>
+          <h2 id="detail-title"></h2>
+        </div>
+        <button type="button" class="icon-btn" id="detail-close" aria-label="Close details">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6 6.4 5Z"/></svg>
+        </button>
+      </div>
+      <div id="detail-body"></div>
+    </div>
+  </dialog>
+
+  <script src="data/offers.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "CampusKey",
+  "short_name": "CampusKey",
+  "description": "Student offers you can claim in India with your college ID card or college email.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f9",
+  "theme_color": "#1f3a5f",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

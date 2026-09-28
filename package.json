@@ -1,0 +1,15 @@
+{
+  "name": "campuskey",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verified student offers you can claim in India with your college ID card or college email.",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "validate": "node scripts/validate-data.js",
+    "test": "npm run validate && playwright test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "1.55.0"
+  }
+}
